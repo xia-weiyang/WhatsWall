@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background" >
+
+    <!-- com.handmark.pulltorefresh.library.PullToRefreshListView -->
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/room_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:background="@color/room_item_background"
+        android:divider="@null"
+        android:scrollbarStyle="outsideOverlay" />
+
+    <ProgressBar
+        android:id="@+id/room_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/room_nocontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/content_text"
+        android:text="@string/textview_nocontent"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/room_function"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/room_function_background"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/room_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/imgbutton_report" />
+
+        <ImageButton
+            android:id="@+id/room_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/imgbutton_send" />
+
+        <RelativeLayout
+            android:id="@+id/room_like_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#00000000" >
+
+            <ImageButton
+                android:id="@+id/room_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="#00000000"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/imgbutton_like" />
+
+            <ImageView
+                android:id="@+id/room_notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/room_like"
+                android:layout_alignTop="@+id/room_like"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:background="#00000000"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/notify"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/room_like_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/welcome_text"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

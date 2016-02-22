@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background" >
+
+    <EditText
+        android:id="@+id/feedback_edit"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/room_publish_edit_background"
+        android:gravity="top|left"
+        android:hint="@string/edit_welcome"
+        android:textCursorDrawable="@null"
+        android:padding="10dp"
+        android:textColor="@color/button_text" />
+
+    <Button
+        android:id="@+id/feedback_enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feedback_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/button_"
+        android:text="@string/action_ok"
+        android:textColor="@color/button_text" />
+    
+           <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:textColor="@color/content_text"
+           android:layout_marginBottom="50dp"
+           android:text="@string/textview_call"/>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gesture-image="http://schemas.polites.com/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background" >
+
+    <com.polites.android.GestureImageView
+        android:id="@+id/imageviewphoto_whole"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible"
+        gesture-image:max-scale="3.0"
+        gesture-image:min-scale="0.7" />
+    
+        <Button
+        android:id="@+id/imageviewphoto_delete"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:padding="0dp"
+        android:textSize="14sp"
+        android:background="@drawable/button_"
+        android:text="@string/action_delete"
+        android:textColor="@color/button_text" />
+
+</RelativeLayout>

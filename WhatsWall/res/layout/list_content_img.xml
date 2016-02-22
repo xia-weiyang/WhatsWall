@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/room_item"
+    android:paddingBottom="30dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="10dp" >
+
+    <ImageView
+        android:id="@+id/list_img"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/app_name"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_background" />
+
+    <TextView
+        android:id="@+id/list_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/list_img"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/list_user"
+        android:layout_toLeftOf="@+id/list_user"
+        android:paddingRight="2dp"
+        android:text="@string/textview__"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/list_report"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
+        android:contentDescription="@string/app_name"
+        android:paddingTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/imgbutton_report"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/list_like"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#00000000"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/like_press"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/list_like_tv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="bottom|right"
+        android:textColor="@color/button_text" />
+
+</RelativeLayout>

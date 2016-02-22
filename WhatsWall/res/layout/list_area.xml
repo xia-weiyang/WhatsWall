@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView 
+        android:id="@+id/list_area_time"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="5dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/textview_area_time"
+        android:textSize="13sp"
+        />
+    
+    <TextView 
+        android:id="@+id/list_area_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/list_area_time"
+        android:text="@string/textview_area_content"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:background="@drawable/room_"/>
+
+</RelativeLayout>

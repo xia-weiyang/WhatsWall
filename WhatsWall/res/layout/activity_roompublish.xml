@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background" >
+
+  <RelativeLayout 
+      android:id="@+id/publish_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/room_publish_edit_background">
+
+    <EditText
+        android:id="@+id/publish_edit"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
+        android:gravity="top"
+        android:padding="10dp"
+        android:maxHeight="120dp"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/content_text"
+        android:hint="@string/edit_wenzi" />
+
+
+    <ImageView
+        android:id="@+id/publish_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="10dp"
+        android:scaleType="centerCrop"
+        android:background="#00000000"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/addimg" />
+
+    </RelativeLayout>
+    
+    <Switch
+        android:id="@+id/publish_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_marginTop="20dp" />
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/publish_switch"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:text="@string/textview_isanno"/>
+
+
+
+    <Button
+        android:id="@+id/publish_publish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/publish_relative"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_"
+        android:visibility="invisible"
+        android:text="@string/action_publish"
+        android:textColor="@color/button_text"/>
+
+</RelativeLayout>

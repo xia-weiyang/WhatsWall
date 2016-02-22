@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background" >
+
+    <TextView
+        android:id="@+id/roomwelcome"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/welcome_background"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:textColor="@color/welcome_text"
+        android:text="@string/textview_roomwelcome"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/roomwelcome_editText"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/roomwelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:singleLine="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="#00000000"
+        android:inputType="text"
+        android:hint="@string/edit_welcome"
+        android:textColor="@color/welcome_text"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/roomwelcome_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/roomwelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/welcome_edit"
+        android:contentDescription="@string/action_edit"/>
+
+    <Button
+        android:id="@+id/roomwelcome_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roomwelcome"
+        android:layout_alignLeft="@+id/roomwelcome"
+        android:layout_alignRight="@+id/roomwelcome"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/button_"
+        android:contentDescription="@string/app_name"
+        android:text="@string/action_welcome_enter"
+        android:textColor="@color/button_text"
+         />
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <!--
+            Theme customizations availab"C:/Users/Administrator/Desktop/wall/welcome/welcom_background.png"le in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        
+    </style>
+    
+    <style name="GetTo" parent="@android:style/Theme.DeviceDefault.Light">
+       
+        <item name="android:windowFullscreen">true</item>
+         <item name="android:actionBarStyle">@style/my_actionbar_style</item>  
+    </style>
+    
+    <style name="my_actionbar_style" parent="@android:style/Widget.Holo.Light.ActionBar">  
+        <item name="android:background">#fc3f5b</item>  
+        <item name="android:backgroundStacked">#ffffff</item> 
+         <item name="android:backgroundSplit">@color/blue</item>  
+        <item name="android:titleTextStyle">@style/AcBar_titleStyle</item> 
+         <item name="android:displayOptions">showTitle</item>
+    </style>  
+    <style name="AcBar_titleStyle">    
+         
+        <item name="android:textColor">#ffffff</item>  
+        <item name="android:textSize">18sp</item>
+    </style>  
+    
+    <style name="App" parent="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"></style>
+
+    <style name="Theme_Light_BlackActionBar" parent="android:Theme.Holo.Light">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:actionBarStyle">@style/actionbar_def_style</item> 
+    </style>
+
+    <style name="actionbar_def_style" parent="@android:style/Widget.Holo.Light.ActionBar">
+         
+        <item name="android:background">@drawable/actionbar_black</item>
+        <item name="android:displayOptions">useLogo</item>
+    </style>
+    
+     <style name="Theme_Light_RedActionBar" parent="android:Theme.Holo.Light">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:actionBarStyle">@style/actionbar_def_style_red</item> 
+    </style>
+
+    <style name="actionbar_def_style_red" parent="@android:style/Widget.Holo.Light.ActionBar">
+         
+        <item name="android:background">@drawable/actionbar_red</item>
+        <item name="android:displayOptions">useLogo</item>
+    </style>
+    
+    <style name="register_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox"> 
+        <item name="android:button">@drawable/checkbox_contract</item> 
+    </style>
+    
+    <style name="report_radio" parent="@android:style/Widget.CompoundButton.RadioButton"> 
+        <item name="android:button">@drawable/radio_report</item> 
+    </style>
+    
+    <style name="start_theme" parent="@android:style/Theme" >
+        <item name="android:windowBackground">@drawable/launch</item>  
+    	<item name="android:windowNoTitle">true</item> 
+    	<item name="android:windowFullscreen">true</item>
+    </style>
+    
+        <style name="dialog_tip" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+
+</resources>

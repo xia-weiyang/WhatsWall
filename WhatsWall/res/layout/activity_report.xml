@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background" >
+
+    <RadioGroup
+        android:id="@+id/report_types"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/room_publish_edit_background"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp" >
+
+        <RadioButton
+            android:id="@+id/report_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_sex"
+            android:textSize="20sp"
+            android:textColor="@color/button_text"
+            android:layout_marginBottom="10dp"
+            style="@style/report_radio" />
+
+        <RadioButton
+            android:id="@+id/report_baoli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_baoli"
+            android:textSize="20sp"
+            android:textColor="@color/button_text"
+            android:layout_marginBottom="10dp"
+            style="@style/report_radio"  />
+
+        <RadioButton
+            android:id="@+id/report_ad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_ad"
+            android:textSize="20sp"
+            android:textColor="@color/button_text"
+            android:layout_marginBottom="10dp"
+            style="@style/report_radio"  />
+
+        <RadioButton
+            android:id="@+id/report_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_other" 
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/button_text"
+            style="@style/report_radio" />
+    </RadioGroup>
+		
+    <EditText 
+        android:id="@+id/report_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_types"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:maxHeight="100dp"
+        android:textCursorDrawable="@null"
+        android:visibility="invisible"
+        android:textColor="@color/content_text"
+        android:background="@drawable/room_publish_edit_background"
+        android:hint="@string/edit_report"/>
+    
+       <Button
+        android:id="@+id/report_enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_"
+        android:text="@string/action_report"
+        android:textColor="@color/button_text"/>
+       
+
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff0f2" >
+    
+
+    <TextView
+        android:id="@+id/content_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/area_title"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/textview_area_title"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/content_nowtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/area_title"
+        android:gravity="center_vertical|right"
+        android:paddingRight="10dp"
+        android:text="@string/textview_area_nowtime"
+        android:textSize="17sp" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/content_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/content_title"
+        android:divider="@null"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:scrollbarStyle="outsideOverlay"/>
+
+    <Button
+        android:id="@+id/content_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/content_list"
+        android:layout_alignLeft="@+id/content_list"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/area_button"
+        android:text="@string/action_back"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/content_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/content_list"
+        android:layout_alignRight="@+id/content_list"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/area_button"
+        android:text="@string/action_review"
+        android:textSize="20sp" />
+
+   <RelativeLayout
+        android:id="@+id/content_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/content_list"
+        android:visibility="invisible" >
+
+       		<EditText
+                android:id="@+id/content_editText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@+id/content_button_enter"
+                android:inputType="text" />
+       
+       
+            <Button
+                android:id="@+id/content_button_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:text="@string/action_enter" />
+
+            
+  
+    
+    </RelativeLayout>
+
+</RelativeLayout>

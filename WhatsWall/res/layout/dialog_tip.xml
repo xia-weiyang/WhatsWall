@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background" >
+
+    <TextView
+        android:id="@+id/dialog_tip_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="5"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:lineSpacingExtra="3dp"
+        android:gravity="center"
+        android:textColor="@color/welcome_text"
+        android:text="@string/test"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/dialog_tip_Iknow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_dialog"
+        android:textColor="@color/welcome_text"
+        android:text="@string/action_iknow"
+        android:textSize="18sp" />
+    
+</LinearLayout>
